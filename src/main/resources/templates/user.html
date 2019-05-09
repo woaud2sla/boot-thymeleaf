@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Boot ajax example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" type="text/css"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Mkyong.com</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container" style="min-height: 500px">
+
+    <div class="starter-template">
+        <h1>Spring Boot AJAX Example</h1>
+
+        <div id="feedback"></div>
+
+        <table class="table">
+		  <thead>
+		    <tr>
+		      <th scope="col">아이디</th>
+		      <th scope="col">이름</th>
+		      <th scope="col">회사</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <th scope="row"><p th:text="${id}"/></th>
+		      <td><p th:text="${name}"/></td>
+		      <td><p th:text="${company}"/></td>
+		    </tr>
+		  </tbody>
+		</table>
+
+    </div>
+
+</div>
+
+<div class="container">
+    <footer>
+        <p>
+            © <a href="http://www.mkyong.com">Mkyong.com</a> 2017
+        </p>
+    </footer>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
